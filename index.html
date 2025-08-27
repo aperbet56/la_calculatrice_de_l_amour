@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La calculatrice de l'Amour</title>
+    <!-- Importation de la favicon -->
+    <link rel="shortcut icon" href="img/heart.png" type="image/x-icon" />
+    <!-- Importation des polices -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+    />
+    <!-- Importation des styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Début du header -->
+    <header>
+      <h1 class="main__title">💕 La calculatrice de l'amour 💕</h1>
+    </header>
+    <!-- Fin du header -->
+
+    <!-- Début du main -->
+    <main class="main__content">
+      <!-- Début de la section container -->
+      <section class="container">
+        <h2 class="heading">
+          👋 Bienvenue sur
+          <span class="logo">la calculatrice de l'amour !</span>
+        </h2>
+        <p class="subtitle">
+          Cette application vous permet de calculer la compatibilité amoureuse
+          entre deux personnes.
+        </p>
+        <br />
+        <p class="about">
+          Nous savons tous qu'un nom peut en dire long sur une personne. Les
+          noms ne sont pas choisis au hasard : ils ont tous une signification.
+          <br /><br />Parfois, on se demande si une relation peut fonctionner.
+          Avec <span class="logo">la calculatrice de l'amour</span>, vous pouvez
+          calculer les chances de réussite d'une relation entre deux personnes.
+          <br />
+          <br />
+          Pour connaître vos chances de succès avec l'âme sœur, il vous suffit
+          de saisir vos deux noms complets (prénom et nom) dans les deux champs
+          ci-dessous, puis d'appuyer sur le bouton "Calculer".
+        </p>
+        <div class="box">
+          <div class="flex__box">
+            <div class="yourName">
+              <label for="yourName" class="bold">Votre prénom et nom :</label>
+              <input
+                type="text"
+                id="yourName"
+                placeholder="Jane Doe"
+                required
+              />
+            </div>
+            <div class="yourCrush">
+              <label for="yourCrush" class="bold"
+                >Prénom et nom de votre crush :
+              </label>
+              <input
+                type="text"
+                id="yourCrush"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+          </div>
+          <div class="calculate__btn">
+            <img src="img/heart.png" alt="coeur" />
+            <span class="text__btn">Calculer</span>
+          </div>
+          <p class="lovePercentage"></p>
+        </div>
+      </section>
+      <!-- Fin de la section container -->
+    </main>
+    <footer>
+      <p class="footer__text">
+        &copy; Copyright <span class="footer__text__year"></span>. Le
+        calculateur de l'Amour.
+      </p>
+    </footer>
+    <!-- Fin du main -->
+    <script src="script.js"></script>
+  </body>
+</html>

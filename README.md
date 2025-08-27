@@ -4,7 +4,7 @@
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/la_calculatrice_de_l_amour/
 
 ## Projet développé avec
 

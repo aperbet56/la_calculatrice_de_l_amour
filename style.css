@@ -1,0 +1,154 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    font-family: "Lato", sans-serif;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    background-color: #f7f7f7;
+    padding-block: 25px;
+}
+
+/**** header ****/
+
+.main__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main__title,
+.logo {
+    font-family: "Dancing Script", cursive;
+    color: #ff0000;
+    text-transform: capitalize;
+}
+
+/**** main ****/
+
+.main__content {
+    flex-grow: 1;
+}
+
+/**** section ****/
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.container,
+.box,
+input,
+.calculate__btn {
+    text-align: center;
+}
+
+.heading {
+    font-size: 30px;
+    letter-spacing: 0.9px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.subtitle,
+.about {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.box {
+    padding: 100px 0;
+}
+
+.flex__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+}
+
+.yourName,
+.yourCrush {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 20px 100px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.calculate__btn {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.calculate__btn img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.calculate__btn img:hover {
+    opacity: 0.7;
+}
+
+.text__btn {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.lovePercentage {
+    font-size: 30px;
+    margin-block: 30px;
+}
+
+/**** footer ****/
+
+.footer__text {
+    padding: 12px;
+    font-size: 26px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}

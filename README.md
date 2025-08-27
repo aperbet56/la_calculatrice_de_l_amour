@@ -2,6 +2,8 @@
 
 ## Le challenge
 
+Cette application vous permet de calculer la compatibilité amoureuse entre deux personnes.
+
 ## Démonstration
 
 Lien vers le projet : https://aperbet56.github.io/la_calculatrice_de_l_amour/

@@ -5,6 +5,7 @@ const resultLovePercentage = document.querySelector(".lovePercentage");
 const yourNameInput = document.querySelector("#yourName");
 const yourCrushInput = document.querySelector("#yourCrush");
 const observation = document.querySelector(".observation");
+const resetBtn = document.querySelector(".reset");
 
 // Déclaration de la fonction getCurrentYear qui va permettre l'affichage dynamique de l'année
 const getCurrentYear = () => {
@@ -54,8 +55,18 @@ const send = () => {
     } else {
       // Appel de la fonction calculateLove()
       calculateLove();
+      calculateBtn.style.display = "none";
+      resetBtn.style.opacity = "1";
     }
   });
 };
 // Appel de la fonction send()
 send();
+
+// Ecoute de l'événement "click" sur le bouton "Réaliser un nouveau test"
+resetBtn.addEventListener("click", () => {
+  yourNameInput.value = "";
+  yourCrushInput.value = "";
+  document.location.reload();
+  window.scrollTo(0, 0);
+});

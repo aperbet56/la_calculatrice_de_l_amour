@@ -4,6 +4,7 @@ const calculateBtn = document.querySelector(".calculate__btn");
 const resultLovePercentage = document.querySelector(".lovePercentage");
 const yourNameInput = document.querySelector("#yourName");
 const yourCrushInput = document.querySelector("#yourCrush");
+const observation = document.querySelector(".observation");
 
 // Déclaration de la fonction getCurrentYear qui va permettre l'affichage dynamique de l'année
 const getCurrentYear = () => {
@@ -28,6 +29,18 @@ const calculateLove = () => {
   random = Math.floor(random);
   console.log(random);
   resultLovePercentage.textContent = `${random} %`;
+
+  // if ...else if... else
+  if (random < 50) {
+    resultLovePercentage.style.color = "#b6d3ff";
+    observation.textContent = `Faible compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Nous vous conseillons de rester amis.`;
+  } else if (random >= 50 && random <= 70) {
+    resultLovePercentage.style.color = "#ffa856";
+    observation.textContent = `Bonne compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Cette relation pourrait durer dans le temps.`;
+  } else {
+    resultLovePercentage.style.color = "#ff3f3f";
+    observation.textContent = `Exellente compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Vous avez trouvé votre l'âme sœur !`;
+  }
 };
 
 // Déclaration de la fonction send qui permet d'envoyer les données

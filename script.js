@@ -6,6 +6,7 @@ const yourNameInput = document.querySelector("#yourName");
 const yourCrushInput = document.querySelector("#yourCrush");
 const observation = document.querySelector(".observation");
 const resetBtn = document.querySelector(".reset");
+const resultTestSection = document.querySelector(".resultTest");
 
 // Déclaration de la fonction getCurrentYear qui va permettre l'affichage dynamique de l'année
 const getCurrentYear = () => {
@@ -56,6 +57,7 @@ const send = () => {
       // Appel de la fonction calculateLove()
       calculateLove();
       calculateBtn.style.display = "none";
+      resultTestSection.style.display = "block";
       resetBtn.style.opacity = "1";
     }
   });

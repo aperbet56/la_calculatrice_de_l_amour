@@ -51,13 +51,15 @@ body {
 
 /**** section ****/
 
-.container {
+.container,
+.resultTest {
     width: 85%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-block: 80px;
 }
 
 .container,
+.resultTest,
 .box,
 input,
 .calculate__btn {
@@ -79,7 +81,7 @@ input,
 }
 
 .box {
-    padding: 100px 0;
+    margin-top: 80px;
 }
 
 .flex__box {
@@ -140,9 +142,22 @@ input {
     transform: translate(-50%, -50%)
 }
 
+/**** section resultTest ****/
+
+.resultTest {
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    padding-block: 30px;
+}
+
 .lovePercentage {
     font-size: 30px;
-    margin-block: 30px;
+    margin-block: 50px;
+}
+
+.observation {
+    font-size: 20px;
+    margin-bottom: 50px;
 }
 
 /**** footer ****/

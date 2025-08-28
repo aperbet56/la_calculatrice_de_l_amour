@@ -51,7 +51,7 @@ const send = () => {
   calculateBtn.addEventListener("click", (e) => {
     // Suppression du comportement par défaut
     e.preventDefault();
-    if (yourNameInput.value.trim() == "" && yourCrushInput.value.trim() == "") {
+    if (yourNameInput.value.trim() == "" || yourCrushInput.value.trim() == "") {
       alert("Veuillez remplir les différents champs !!");
     } else {
       // Appel de la fonction calculateLove()

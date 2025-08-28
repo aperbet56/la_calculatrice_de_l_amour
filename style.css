@@ -160,6 +160,22 @@ input {
     margin-bottom: 50px;
 }
 
+.reset {
+    padding: 20px 30px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    margin-bottom: 20px;
+}
+
+.reset:hover {
+    box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.69);
+}
+
 /**** footer ****/
 
 .footer__text {

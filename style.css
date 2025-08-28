@@ -15,6 +15,11 @@ input {
     font-family: "Lato", sans-serif;
 }
 
+p {
+    line-height: 1.4;
+    font-size: 20px;
+}
+
 /**** body ****/
 
 body {
@@ -50,15 +55,13 @@ body {
 
 /**** section ****/
 
-.container,
-.resultTest {
+section {
     width: 85%;
     margin: 0 auto;
     margin-block: 80px;
 }
 
-.container,
-.resultTest,
+section,
 .box,
 input,
 .calculate__btn {
@@ -70,12 +73,11 @@ input,
     letter-spacing: 0.9px;
     line-height: 1.8;
     margin-bottom: 30px;
+    padding-inline: 12px;
 }
 
 .subtitle,
 .about {
-    font-size: 20px;
-    line-height: 1.4;
     text-align: left;
 }
 
@@ -156,8 +158,8 @@ input {
 }
 
 .observation {
-    font-size: 20px;
     margin-bottom: 30px;
+    padding-inline: 12px;
 }
 
 .reset {
@@ -185,4 +187,31 @@ input {
     font-size: 26px;
     text-align: center;
     font-family: "Dancing Script", cursive;
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
+    .main__title {
+        font-size: 30px;
+    }
+
+    p,
+    .reset {
+        font-size: 18px;
+    }
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+        margin-block: 40px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .reset {
+        padding: 20px;
+    }
 }

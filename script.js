@@ -34,7 +34,7 @@ const calculateLove = () => {
 
   // if ...else if... else
   if (random < 50) {
-    resultLovePercentage.style.color = "#b6d3ff";
+    resultLovePercentage.style.color = "#fdee06";
     observation.textContent = `Faible compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Nous vous conseillons de rester amis.`;
   } else if (random >= 50 && random <= 70) {
     resultLovePercentage.style.color = "#ffa856";

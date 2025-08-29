@@ -41,7 +41,7 @@ const calculateLove = () => {
     observation.textContent = `Bonne compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Cette relation pourrait durer dans le temps.`;
   } else {
     resultLovePercentage.style.color = "#ff3f3f";
-    observation.textContent = `Exellente compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Vous avez trouvé votre l'âme sœur !`;
+    observation.textContent = `Excellente compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Vous avez trouvé votre l'âme sœur !`;
   }
 };
 

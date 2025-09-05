@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     font-family: "Lato", sans-serif;
     background-color: #f7f7f7;
+    cursor: url("img/heart-1.png"), auto;
 }
 
 /**** header ****/

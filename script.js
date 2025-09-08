@@ -72,3 +72,8 @@ resetBtn.addEventListener("click", () => {
   document.location.reload();
   window.scrollTo(0, 0);
 });
+
+// Ecoute du chargement de la page
+window.addEventListener("load", () => {
+  new cursoreffects.emojiCursor({ emoji: ["💕 ", "❤️"], delay: 25 });
+});

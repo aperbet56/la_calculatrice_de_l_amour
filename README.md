@@ -22,5 +22,6 @@ Lien vers le projet : https://aperbet56.github.io/la_calculatrice_de_l_amour/
 - Desktop first
 - Page web responsive
 - Importation des polices "Lato" et "Dancing Script"
+- Importation de la librairie 90s Cursor Effects (https://github.com/tholman/cursor-effects)
 - JavaScript
 - Code JavaScript commenté

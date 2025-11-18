@@ -28,17 +28,47 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Lato", sans-serif;
-    background-color: #f7f7f7;
     /*cursor: url("img/heart-1.png"), auto;*/
 }
 
 /**** header ****/
 
+header {
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**** div intro ****/
+
+.intro {
+    width: 75%;
+    background-color: #fffffe;
+    opacity: 0.7;
+    border-radius: 12px;
+}
+
 .main__title {
-    font-size: 40px;
-    text-align: center;
-    padding: 22px 12px;
+    font-size: 50px;
+    padding: 24px 12px;
     margin: 0;
+}
+
+.main__title,
+.subtitle {
+    text-align: center;
+    padding: 16px;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: #e53170;
 }
 
 .main__title,
@@ -59,7 +89,9 @@ body {
 section {
     width: 85%;
     margin: 0 auto;
-    margin-block: 80px;
+    margin-block: 40px;
+    background-color: #fffffe;
+    color: #2e2f3e;
 }
 
 section,
@@ -73,13 +105,51 @@ input,
     font-size: 30px;
     letter-spacing: 0.9px;
     line-height: 1.8;
+    color: #0f0e17;
     margin-bottom: 30px;
     padding-inline: 12px;
 }
 
-.subtitle,
+.wave__emoji {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 1.8s linear infinite;
+}
+
+/**** Animation wave ****/
+
+@keyframes wave {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(12deg);
+    }
+
+    40% {
+        transform: rotate(9deg);
+    }
+}
+
+.wave__emoji img {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+}
+
+
 .about {
     text-align: left;
+    line-height: 1.7;
 }
 
 .box {
@@ -113,12 +183,19 @@ input {
     font-size: 16px;
     border-radius: 20px;
     margin-bottom: 15px;
+    background-color: #0f0e17;
+}
+
+input,
+input::placeholder {
+    color: #fffffe;
+    font-weight: 600;
 }
 
 .calculate__btn {
     font-size: 20px;
     font-weight: 700;
-    color: #ffffff;
+    color: #fffffe;
     display: flex;
     justify-content: center;
     align-items: center;

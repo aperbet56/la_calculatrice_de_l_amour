@@ -1,3 +1,7 @@
+/**** Importation des polices Dosis et Pacifico ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Pacifico&display=swap');
+
 /**** Reset ****/
 
 *,
@@ -12,7 +16,7 @@ button,
 input {
     border: none;
     outline: none;
-    font-family: "Lato", sans-serif;
+    font-family: "Dosis", sans-serif;
 }
 
 p {
@@ -27,7 +31,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Lato", sans-serif;
+    font-family: "Dosis", sans-serif;
     /*cursor: url("img/heart-1.png"), auto;*/
 }
 
@@ -68,12 +72,13 @@ header {
 
 .subtitle {
     font-size: 30px;
+    font-weight: 600;
     color: #0f0e17;
 }
 
 .main__title,
 .logo {
-    font-family: "Dancing Script", cursive;
+    font-family: "Pacifico", cursive;
     color: #e53170;
     text-transform: capitalize;
 }
@@ -292,7 +297,7 @@ input::placeholder {
     padding: 24px 12px;
     font-size: 26px;
     text-align: center;
-    font-family: "Dancing Script", cursive;
+    font-family: "Dosis", sans-serif;
 }
 
 /**** Responsive design version mobile ****/

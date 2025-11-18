@@ -34,13 +34,13 @@ const calculateLove = () => {
 
   // if ...else if... else
   if (random < 50) {
-    resultLovePercentage.style.color = "#fdee06";
+    resultLovePercentage.style.color = "#ff8906";
     observation.textContent = `Faible compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Nous vous conseillons de rester amis.`;
   } else if (random >= 50 && random <= 70) {
-    resultLovePercentage.style.color = "#ffa856";
+    resultLovePercentage.style.color = "#f25f4c";
     observation.textContent = `Bonne compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Cette relation pourrait durer dans le temps.`;
   } else {
-    resultLovePercentage.style.color = "#ff3f3f";
+    resultLovePercentage.style.color = "#e53170";
     observation.textContent = `Excellente compatibilité amoureuse entre ${yourNameInput.value} et ${yourCrushInput.value}. Vous avez trouvé votre l'âme sœur !`;
   }
 };

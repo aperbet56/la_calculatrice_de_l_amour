@@ -68,13 +68,13 @@ header {
 
 .subtitle {
     font-size: 30px;
-    color: #e53170;
+    color: #0f0e17;
 }
 
 .main__title,
 .logo {
     font-family: "Dancing Script", cursive;
-    color: #ff0000;
+    color: #e53170;
     text-transform: capitalize;
 }
 
@@ -195,36 +195,64 @@ input::placeholder {
 .calculate__btn {
     font-size: 20px;
     font-weight: 700;
-    color: #fffffe;
+    background-color: transparent;
+    position: relative;
+    /* width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: center;*/
 }
 
-.calculate__btn img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.calculate__btn img:hover {
-    opacity: 0.7;
-}
-
-.text__btn {
+.calculate__btn::after {
+    content: "Calculer";
+    color: #fffffe;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
     position: absolute;
-    bottom: 45%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}
+
+
+.calculate__btn i {
+    font-size: 200px;
+    color: #e53170;
+    cursor: pointer;
+    animation: beat 1s ease 0.5s infinite normal;
+    animation-timing-function: (cubic-bezier(0.61, 0.04, 0.17, 1.32));
+}
+
+/**** Animation beat ****/
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /**** section resultTest ****/
 
 .resultTest {
-    border: 2px solid #ff0000;
+    border: 2px solid #e53170;
     border-radius: 20px;
     padding-block: 30px;
     display: none;
@@ -245,8 +273,8 @@ input::placeholder {
     font-size: 20px;
     text-align: center;
     font-weight: 700;
-    background-color: #ff0000;
-    color: #ffffff;
+    background-color: #e53170;
+    color: #fffffe;
     border-radius: 8px;
     cursor: pointer;
     opacity: 0;
@@ -261,7 +289,7 @@ input::placeholder {
 /**** footer ****/
 
 .footer__text {
-    padding: 22px 12px;
+    padding: 24px 12px;
     font-size: 26px;
     text-align: center;
     font-family: "Dancing Script", cursive;
@@ -272,6 +300,10 @@ input::placeholder {
 @media screen and (max-width: 572px) {
     .main__title {
         font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 24px;
     }
 
     p,

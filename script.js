@@ -24,6 +24,31 @@ const getCurrentYear = () => {
 // Appel de la fonction getCurrentYear()
 getCurrentYear();
 
+// Regex
+const regex = /^(?:[^\d\W][\-\s\']{0,1}){2,20}$/i;
+
+/**
+ * Fonction firstNameAndLastNameValidation pour la validation du champ votre prénom et nom
+ * @param {String} yourName
+ */
+const firstNameAndLastNameValidation = (yourName) => {
+  // Ecoute de l'événement "input" sur l'input yourName
+  yourName.addEventListener("input", (e) => {
+    e.preventDefault();
+    if (regex.test(yourName.value) === false) {
+      // console.log("false");
+      yourName.style.backgroundColor = "#ff5470";
+      return false;
+    } else {
+      yourName.style.backgroundColor = "#00ebc7";
+      // console.log("true");
+      return true;
+    }
+  });
+};
+// Appel de la fonction firstNameAndLastNameValidation
+firstNameAndLastNameValidation(yourName);
+
 // Déclaration de la fonction calculateLove qui va permettre de calculer la comptabilité amoureuse entre deux personnes
 const calculateLove = () => {
   let random = Math.random();
@@ -51,6 +76,10 @@ const send = () => {
   calculateBtn.addEventListener("click", (e) => {
     // Suppression du comportement par défaut
     e.preventDefault();
+    /* if (
+      regex.test(yourName.value) === false ||
+      regex.test(yourCrush.value) === false
+    ) {*/
     if (yourNameInput.value.trim() == "" || yourCrushInput.value.trim() == "") {
       alert("Veuillez remplir les différents champs !!");
     } else {

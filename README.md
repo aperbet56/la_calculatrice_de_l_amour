@@ -1,5 +1,7 @@
 ## 💕 LA CALCULATRICE DE L'AMOUR 💕
 
+![Design preview for the project](./img/banner.png)
+
 ## Le challenge
 
 Cette application vous permet de calculer la compatibilité amoureuse entre deux personnes.

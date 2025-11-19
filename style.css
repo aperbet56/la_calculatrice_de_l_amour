@@ -47,6 +47,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /**** div intro ****/
@@ -81,6 +82,26 @@ header {
     font-family: "Pacifico", cursive;
     color: #e53170;
     text-transform: capitalize;
+}
+
+/**** div down ****/
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #fffffe;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.down img {
+    width: 80%;
 }
 
 /**** main ****/
@@ -292,10 +313,19 @@ input::placeholder {
     box-shadow: 2px 2px 4px rgba(230, 49, 112, 0.69);
 }
 
+/**** div separator ****/
+
+.separator {
+    width: 75%;
+    margin: 30px auto;
+    border: 1px solid #2e2f3e;
+}
+
 /**** footer ****/
 
 .footer__text {
-    padding: 24px 12px;
+    padding-inline: 12px;
+    margin-bottom: 30px;
     font-size: 26px;
     text-align: center;
     font-family: "Dosis", sans-serif;

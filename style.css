@@ -52,7 +52,7 @@ header {
 /**** div intro ****/
 
 .intro {
-    width: 75%;
+    width: 85%;
     background-color: #fffffe;
     opacity: 0.7;
     border-radius: 12px;
@@ -304,6 +304,12 @@ input::placeholder {
 /**** Responsive design version mobile ****/
 
 @media screen and (max-width: 572px) {
+
+    .intro,
+    section {
+        width: 90%;
+    }
+
     .main__title {
         font-size: 30px;
     }
@@ -318,7 +324,6 @@ input::placeholder {
     }
 
     section {
-        width: 90%;
         margin: 0 auto;
         margin-block: 40px;
     }

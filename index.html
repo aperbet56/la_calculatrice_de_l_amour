@@ -34,7 +34,7 @@
     <main class="main__content">
       <!-- Début de la section container -->
       <section class="container" id="container">
-        <h2 class="heading">
+        <div class="heading">
           <div class="wave__emoji">
             <img
               alt="👋"
@@ -44,7 +44,7 @@
           </div>
           Bienvenue sur
           <span class="logo">la calculatrice de l'Amour !</span>
-        </h2>
+        </div>
         <p class="about">
           Parfois, on se demande si une relation peut fonctionner. Avec
           <span class="logo">la calculatrice de l'Amour</span>, vous pouvez
@@ -54,7 +54,8 @@
           ci-dessous, puis d'appuyer sur le bouton "Calculer".
         </p>
 
-        <div class="box">
+        <form class="box">
+          <h2 class="heading">Réalisez le test de compatibilité amoureuse !</h2>
           <div class="flex__box">
             <div class="yourName">
               <label for="yourName" class="bold">Votre prénom et nom :</label>
@@ -80,7 +81,7 @@
           <div class="calculate__btn">
             <i class="fas fa-heart"></i>
           </div>
-        </div>
+        </form>
       </section>
       <!-- Fin de la section container -->
       <!-- Début de la section resultTest-->

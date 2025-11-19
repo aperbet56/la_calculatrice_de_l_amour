@@ -25,3 +25,5 @@ Lien vers le projet : https://aperbet56.github.io/la_calculatrice_de_l_amour/
 - Importation de la librairie 90s Cursor Effects (https://github.com/tholman/cursor-effects)
 - JavaScript
 - Code JavaScript commenté
+- Regex
+- Méthode test pour les regex

@@ -49,6 +49,28 @@ const firstNameAndLastNameValidation = (yourName) => {
 // Appel de la fonction firstNameAndLastNameValidation
 firstNameAndLastNameValidation(yourName);
 
+/**
+ * Fonction firstNameAndLastNameCrushValidation pour la validation du champ votre crush prénom et nom
+ * @param {String} yourCrush
+ */
+const firstNameAndLastNameCrushValidation = (yourCrush) => {
+  // Ecoute de l'événement "input" sur l'input yourCrush
+  yourCrush.addEventListener("input", (e) => {
+    e.preventDefault();
+    if (regex.test(yourCrush.value) === false) {
+      // console.log("false");
+      yourCrush.style.backgroundColor = "#ff5470";
+      return false;
+    } else {
+      // console.log("true");
+      yourCrush.style.backgroundColor = "#00ebc7";
+      return true;
+    }
+  });
+};
+// Appel de la fonction firstNameAndLastNameCrushValidation
+firstNameAndLastNameCrushValidation(yourCrush);
+
 // Déclaration de la fonction calculateLove qui va permettre de calculer la comptabilité amoureuse entre deux personnes
 const calculateLove = () => {
   let random = Math.random();

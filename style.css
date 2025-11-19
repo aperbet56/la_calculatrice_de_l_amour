@@ -132,7 +132,8 @@ input,
     letter-spacing: 0.9px;
     line-height: 1.8;
     color: #0f0e17;
-    margin-bottom: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
     padding-inline: 12px;
 }
 
@@ -179,7 +180,7 @@ input,
 }
 
 .box {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .flex__box {

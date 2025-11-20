@@ -32,7 +32,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Dosis", sans-serif;
-    /*cursor: url("img/heart-1.png"), auto;*/
 }
 
 /**** header ****/
@@ -224,11 +223,6 @@ input::placeholder {
     font-weight: 700;
     background-color: transparent;
     position: relative;
-    /* width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 .calculate__btn::after {
@@ -255,7 +249,9 @@ input::placeholder {
 /**** Animation beat ****/
 
 @keyframes beat {
-    0% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
 
@@ -269,10 +265,6 @@ input::placeholder {
 
     75% {
         transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
     }
 }
 
@@ -307,7 +299,7 @@ input::placeholder {
     cursor: pointer;
     opacity: 0;
     margin-bottom: 15px;
-    transition: box-shadow 0.3s ease-in-out
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .reset:hover {

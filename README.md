@@ -1,4 +1,4 @@
-## 💕 LA CALCULATRICE DE L'AMOUR 💕
+## 💕 LA CALCULATRICE DE L'AMOUR ❤️‍🔥
 
 ![Design preview for the project](./img/banner.png)
 

@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-button,
 input {
     border: none;
     outline: none;
@@ -20,7 +19,6 @@ input {
 }
 
 p {
-    line-height: 1.4;
     font-size: 20px;
 }
 

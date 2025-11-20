@@ -6,7 +6,7 @@
 
 Cette application vous permet de calculer la compatibilité amoureuse entre deux personnes.
 Pour se faire, l'internaute doit saisir son noms complets (prénom et nom) ainsi que celui de son crush dans les deux champspuis d'appuyer sur le bouton "Calculer".
-Le résultat apparaîtra sous forme de pourcentage et un commentaire vous aide a interpréter le pourcentage.
+Le résultat du test apparaîtra sous forme de pourcentage et un commentaire vous aide a interpréter le pourcentage.
 
 ## Démonstration
 
